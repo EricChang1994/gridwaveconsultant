@@ -1,0 +1,401 @@
+[
+  {
+    "slug": "fengmiao",
+    "name": "Fengmiao I",
+    "subtitle": "Offshore substation",
+    "country": "Taiwan",
+    "location": "Offshore Taichung, Taiwan",
+    "capacity": "495 MW",
+    "capacity_label": "Wind farm capacity",
+    "category": "offshore",
+    "discipline": "HV package leadership",
+    "image": "offshore-substation-yard.webp",
+    "employer": "Semco Maritime",
+    "role": "HV commissioning lead / Project lead HV",
+    "voltage": "66 / 220 kV",
+    "intro": "Connecting detailed engineering, equipment procurement and fabrication-yard delivery for a major offshore substation.",
+    "overview": "Fengmiao I is a 495 MW offshore wind development off Taiwan’s west coast. Developed through a Copenhagen Infrastructure Partners fund, with Copenhagen Offshore Partners leading development, it reached financial close in March 2025. The planned wind farm comprises 33 Vestas 15 MW turbines, with construction completion targeted for the end of 2027 in the developer’s announcement.",
+    "note": "495 MW is the wind farm’s planned installed capacity. Its auction allocation was 500 MW of grid capacity; the founder’s CV describes the 500 MW offshore substation scope.",
+    "facts": [
+      [
+        "Developer / investment platform",
+        "COP / CIP"
+      ],
+      [
+        "Equipment interface",
+        "Transformers · reactors · EAT · GIS"
+      ],
+      [
+        "Fabrication interface",
+        "PTSC, Vietnam"
+      ]
+    ],
+    "work": [
+      [
+        "Engineering & procurement",
+        "Led the HV engineering package during detailed design, coordinating four engineers and multi-million-euro equipment procurement packages."
+      ],
+      [
+        "Installation & commissioning",
+        "Directed installation and commissioning activities for transformers, shunt reactors, earthing / auxiliary transformers and 66 kV / 220 kV GIS. Coordinated HV engineers and OEM specialists at the fabrication yard."
+      ],
+      [
+        "Protection & interfaces",
+        "Performed Siemens protection relay testing using Omicron equipment and coordinated technical, spatial and electrical interfaces between the engineering team and PTSC."
+      ]
+    ],
+    "perspective": "An offshore substation brings many separately procured packages into one electrical system. Equipment interfaces, protection requirements and test sequencing need to remain aligned as the design moves into installation and commissioning.",
+    "services": [
+      "package-management",
+      "commissioning"
+    ],
+    "tags": [
+      "Detailed design",
+      "Procurement",
+      "Installation",
+      "Commissioning"
+    ],
+    "sources": [
+      [
+        "Copenhagen Offshore Partners",
+        "Financial close and project configuration · 19 March 2025",
+        "https://cop.dk/fengmiao-i-offshore-wind-farm-reaches-financial-close-mark-wainwright-appointed-ceo-of-the-495-mw-project/"
+      ]
+    ]
+  },
+  {
+    "slug": "coastal-virginia",
+    "name": "Coastal Virginia",
+    "subtitle": "Offshore Wind",
+    "country": "United States",
+    "location": "Offshore Virginia Beach, United States",
+    "capacity": "2.6 GW",
+    "capacity_label": "Approximate wind farm capacity",
+    "category": "offshore",
+    "discipline": "Commissioning preparation",
+    "image": "offshore-wind-farm.webp",
+    "employer": "Semco Maritime",
+    "role": "HV testing procedure preparation",
+    "voltage": "HV packages",
+    "intro": "Translating project requirements into structured acceptance testing for utility-scale offshore electrical infrastructure.",
+    "overview": "Coastal Virginia Offshore Wind is Dominion Energy’s commercial offshore wind development off Virginia Beach. The US Bureau of Ocean Energy Management approved a configuration of 176 wind turbines and three offshore substations, with an estimated capacity of approximately 2,600 MW. Semco Maritime’s consortium announcement describes three 880 MW offshore substations forming the electrical backbone of the development.",
+    "note": "The public project description uses approximately 2.6 GW. This replaces the rounded 2.7 GW figure in the previous website and founder’s CV.",
+    "facts": [
+      [
+        "Developer / utility",
+        "Dominion Energy"
+      ],
+      [
+        "Approved turbine count",
+        "176"
+      ],
+      [
+        "Offshore substations",
+        "3 × 880 MW, per consortium announcement"
+      ]
+    ],
+    "work": [
+      [
+        "Acceptance test procedures",
+        "Prepared Site Acceptance Testing (SAT) and Harbor Acceptance Testing (HAT) guidance for high-voltage equipment packages."
+      ],
+      [
+        "Standards alignment",
+        "Aligned the testing guidance with the applicable IEEE / IEC framework and the project’s owner / client requirements."
+      ],
+      [
+        "Package-level preparation",
+        "Focused on HV acceptance documentation as part of Semco Maritime’s engineering delivery. This experience is specific to testing preparation, rather than a claim of responsibility for the full wind farm."
+      ]
+    ],
+    "perspective": "For a multi-substation development, consistent acceptance documentation helps connect equipment-level verification with the wider commissioning programme. Clear requirements make the intended test scope easier for suppliers and site teams to interpret.",
+    "services": [
+      "commissioning",
+      "owners-engineering"
+    ],
+    "tags": [
+      "SAT procedures",
+      "HAT procedures",
+      "IEEE / IEC"
+    ],
+    "sources": [
+      [
+        "Bureau of Ocean Energy Management",
+        "Approved project configuration · 2023 decision",
+        "https://www.boem.gov/renewable-energy/state-activities/CVOW-C"
+      ],
+      [
+        "Semco Maritime",
+        "Three 880 MW offshore substations · 8 November 2021",
+        "https://www.semcomaritime.com/news/coastal-virginia-offshore-wind"
+      ]
+    ]
+  },
+  {
+    "slug": "formosa-4",
+    "name": "Formosa 4",
+    "subtitle": "Offshore wind",
+    "country": "Taiwan",
+    "location": "Offshore Miaoli County, Taiwan",
+    "capacity": "495 MW",
+    "capacity_label": "Planned wind farm capacity",
+    "category": "offshore",
+    "discipline": "Requirements & tender evaluation",
+    "image": "offshore-wind-farm.webp",
+    "employer": "Semco Maritime",
+    "role": "HV requirements & technical evaluation",
+    "voltage": "HV infrastructure",
+    "intro": "Establishing clear technical requirements and reviewing supplier proposals before equipment commitments are made.",
+    "overview": "Formosa 4 is a 495 MW offshore wind project developed by Synera Renewable Energy off Miaoli County. The project website describes a site of approximately 58 km², with its nearest point around 20 km from shore. Its planned electrical infrastructure includes 500 MW offshore and onshore substations, with an intended connection to Taipower’s Fangli substation.",
+    "note": "495 MW refers to wind generation capacity; 500 MW refers to the stated substation capacities. These are different project ratings.",
+    "facts": [
+      [
+        "Developer",
+        "Synera Renewable Energy"
+      ],
+      [
+        "Project area",
+        "Approximately 58 km²"
+      ],
+      [
+        "Planned substations",
+        "500 MW offshore + 500 MW onshore"
+      ]
+    ],
+    "work": [
+      [
+        "Employer’s Requirements",
+        "Authored Employer’s Requirements for the high-voltage infrastructure scope."
+      ],
+      [
+        "Tender evaluation",
+        "Assessed international equipment vendor proposals against engineering requirements."
+      ],
+      [
+        "Engineering compliance",
+        "Reviewed technical compliance within the tender process, bringing HV equipment knowledge into procurement-stage decisions."
+      ]
+    ],
+    "perspective": "Tender-stage choices set the technical basis for later design and delivery. Clear equipment requirements and a disciplined comparison of supplier proposals help expose gaps before packages advance into procurement.",
+    "services": [
+      "owners-engineering",
+      "package-management"
+    ],
+    "tags": [
+      "Employer’s Requirements",
+      "Tender assessment",
+      "Compliance"
+    ],
+    "sources": [
+      [
+        "Formosa 4 project website",
+        "Project location, wind capacity and substation configuration",
+        "https://www.formosa4windpower.com/en/portfolio/formosa4/"
+      ],
+      [
+        "Semco Maritime",
+        "Offshore substation EPC award · 29 September 2025",
+        "https://www.semcomaritime.com/news/formosa-4-offshore-substation-award"
+      ]
+    ]
+  },
+  {
+    "slug": "greater-changhua-2b-4",
+    "name": "Greater Changhua 2b & 4",
+    "subtitle": "Offshore substations",
+    "country": "Taiwan",
+    "location": "Offshore Changhua County, Taiwan",
+    "capacity": "920 MW",
+    "capacity_label": "Combined project capacity",
+    "category": "offshore",
+    "discipline": "HV components & factory testing",
+    "image": "hv-switchgear-hall.webp",
+    "employer": "Ørsted",
+    "role": "HV components and protection engineer",
+    "voltage": "HV components",
+    "intro": "Managing equipment documentation, technical variations and factory-to-yard interfaces across major HV packages.",
+    "overview": "Greater Changhua 2b and 4 is Ørsted’s 920 MW offshore wind development, located 35–60 km off Taiwan’s Changhua coast. The project comprises 66 Siemens Gamesa 14 MW turbines. Ørsted reported completion of turbine installation in January 2026 and held a ceremony marking completion of major construction works in September 2026, with final commissioning activities still described in that announcement.",
+    "note": "920 MW is the published combined project rating. Milestones above are dated announcements, not a claim of current commercial operation.",
+    "facts": [
+      [
+        "Developer",
+        "Ørsted"
+      ],
+      [
+        "Turbines",
+        "66 × 14 MW"
+      ],
+      [
+        "Yard interface in founder’s scope",
+        "Seatrium, Singapore"
+      ]
+    ],
+    "work": [
+      [
+        "HV package management",
+        "Managed design documentation, technical variations and contract compliance for transformers, GIS, EATs and busducts."
+      ],
+      [
+        "Factory acceptance testing",
+        "Led FAT activities with European equipment suppliers."
+      ],
+      [
+        "Fabrication-yard interfaces",
+        "Resolved spatial and technical design interfaces with the Seatrium fabrication yard in Singapore."
+      ]
+    ],
+    "perspective": "Factory acceptance and yard integration are closely linked. Equipment documentation, changes and physical interfaces need coordinated review so that packages remain compatible as they move from suppliers to the offshore platform.",
+    "services": [
+      "package-management",
+      "interface-advisory"
+    ],
+    "tags": [
+      "HV components",
+      "FAT",
+      "Yard interfaces"
+    ],
+    "sources": [
+      [
+        "Ørsted",
+        "Turbine installation milestone · January 2026",
+        "https://orsted.com/en/media/news/2026/01/all-wind-turbines-installed-at-orsteds-920-mw-grea-14757941"
+      ],
+      [
+        "Ørsted",
+        "Major construction completion ceremony · September 2026",
+        "https://orsted.com/en/media/news/2026/09/orsted-hosts-completion-ceremony-for-920-mw-greate-15125521"
+      ]
+    ]
+  },
+  {
+    "slug": "greater-changhua-1-2a",
+    "name": "Greater Changhua 1 & 2a",
+    "subtitle": "Onshore grid connection",
+    "country": "Taiwan",
+    "location": "Changhua County, Taiwan",
+    "capacity": "900 MW",
+    "capacity_label": "Combined wind farm capacity",
+    "category": "grid",
+    "discipline": "Grid integration & energization",
+    "image": "offshore-substation-yard.webp",
+    "employer": "Ørsted",
+    "role": "HV components and protection engineer",
+    "voltage": "161 kV grid interface",
+    "intro": "Bringing OEM equipment, local EPC delivery and protection systems together at the onshore grid interface.",
+    "overview": "Greater Changhua 1 and 2a is a 900 MW offshore wind development in Taiwan. Ørsted inaugurated the wind farms in April 2024 and reported that they were operating and fully connected to the grid. The developer’s milestone record notes onshore substation energization in February 2022 and first wind farm power in April 2022.",
+    "note": "The founder’s experience described here concerns the onshore substation and grid integration scope, rather than the full offshore construction programme.",
+    "facts": [
+      [
+        "Developer",
+        "Ørsted"
+      ],
+      [
+        "Founder’s focus",
+        "Onshore substation"
+      ],
+      [
+        "Public inauguration milestone",
+        "April 2024"
+      ]
+    ],
+    "work": [
+      [
+        "SAT / SIT integration",
+        "Managed integration interfaces between global OEMs and local EPC contractors during site acceptance and system integration testing."
+      ],
+      [
+        "Protection & energization",
+        "Troubleshot protection panels and supported substation energization into the 161 kV national grid switching station."
+      ],
+      [
+        "Cable-system integration",
+        "Directed installation and integration of a high-voltage cable culvert box control system."
+      ]
+    ],
+    "perspective": "Grid connection depends on more than individual equipment tests. Protection, controls and OEM / EPC interfaces must be considered together to prepare a substation for integrated testing and energization.",
+    "services": [
+      "commissioning",
+      "interface-advisory"
+    ],
+    "tags": [
+      "SAT / SIT",
+      "Protection",
+      "Grid interface"
+    ],
+    "sources": [
+      [
+        "Ørsted Taiwan",
+        "Inauguration and project milestones · 25 April 2024",
+        "https://orsted.tw/en/news/2024/04/chw1and2a_inaguration"
+      ]
+    ]
+  },
+  {
+    "slug": "mailiao",
+    "name": "Mailiao Power Plant",
+    "subtitle": "High-voltage operations",
+    "country": "Taiwan",
+    "location": "Mailiao, Yunlin County, Taiwan",
+    "capacity": "1.8 GW",
+    "capacity_label": "Original three-unit plant capacity",
+    "category": "operations",
+    "discipline": "Substation operations & maintenance",
+    "image": "hv-switchgear-hall.webp",
+    "employer": "Formosa Plastics Group",
+    "role": "Electrical O&M engineer · 2020–2021",
+    "voltage": "161 / 33 kV",
+    "intro": "Practical experience with high-voltage asset maintenance, emergency repairs and transformer engineering in an operating industrial environment.",
+    "overview": "Mai-Liao Power Corporation was established in 1996 by companies within the Formosa group. Its original independent power project comprised three 600 MW generating units, commissioned between 1999 and 2000, at the Mailiao industrial park in Yunlin County. This profile focuses on the founder’s 2020–2021 high-voltage operations and maintenance experience.",
+    "note": "1.8 GW describes the original three-unit project relevant to this experience. It is not a statement of the plant’s current operating capacity or the capacity of the wider industrial complex.",
+    "facts": [
+      [
+        "Original configuration",
+        "3 × 600 MW"
+      ],
+      [
+        "Experience period",
+        "June 2020 – August 2021"
+      ],
+      [
+        "Founder’s focus",
+        "HV assets, protection and transformers"
+      ]
+    ],
+    "work": [
+      [
+        "Operations & repairs",
+        "Supervised routine O&M and emergency grid repairs for 161 kV autotransformers and circuit breakers."
+      ],
+      [
+        "Protection & transformers",
+        "Programmed Siemens protection relay parameters and managed engineering rebuild work for 161 kV / 33 kV transformers."
+      ],
+      [
+        "Condition monitoring",
+        "Developed and deployed thermal-imaging analytics to identify early signs of CT / VT component failures."
+      ]
+    ],
+    "perspective": "Operating substations provide a direct view of maintainability, protection behaviour and equipment failure modes. That field experience informs how equipment and test requirements can be reviewed during new project delivery.",
+    "services": [
+      "commissioning",
+      "package-management"
+    ],
+    "tags": [
+      "O&M",
+      "Protection relays",
+      "Condition monitoring"
+    ],
+    "sources": [
+      [
+        "Mai-Liao Power Corporation",
+        "Company history and original project configuration",
+        "https://www.mlmpc.com.tw/j2mpc/enus/history.do"
+      ],
+      [
+        "Mai-Liao Power Corporation",
+        "Three 600 MW units · company history in Chinese",
+        "https://www.mlmpc.com.tw/j2mpc/zhtw/history.do"
+      ]
+    ]
+  }
+]
