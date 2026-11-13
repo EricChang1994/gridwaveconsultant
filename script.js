@@ -98,10 +98,10 @@ if (enquiry) {
   const address = enquiry.dataset.email;
   const params = new URLSearchParams(location.search);
   const serviceNames = {
-    'owners-engineering': 'Requirements & technical review',
-    'package-management': 'HV package engineering',
+    'owners-engineering': 'Owner’s engineering',
+    'package-management': 'HV package management',
     'commissioning': 'Commissioning & energization',
-    'interface-advisory': 'Interface coordination',
+    'interface-advisory': 'Interface & delivery advisory',
   };
   const projectNames = {
     'east-anglia-one-north': 'East Anglia ONE North',
@@ -117,17 +117,19 @@ if (enquiry) {
   if (service) enquiry.elements.service.value = service;
   const project = projectNames[params.get('project')];
   if (project) {
-    enquiry.elements.message.value = `I would like to ask about your work on ${project}.\n\n`;
+    enquiry.elements.message.value =
+      `I would like to discuss a scope similar to the experience described in ${project}.\n\n` +
+      'Project location:\nCurrent stage:\nSupport needed:\nTarget timing:';
   }
 
   enquiry.addEventListener('submit', (event) => {
     event.preventDefault();
     if (!enquiry.reportValidity()) return;
     const data = new FormData(enquiry);
-    const subject = `Website enquiry — ${data.get('service')}`;
+    const subject = `GridWave enquiry — ${data.get('service')}`;
     const body =
       `Hello Eric,\n\n${data.get('message')}\n\n` +
-      `Name: ${data.get('name')}\nCompany: ${data.get('company') || 'Not specified'}\nTopic: ${data.get('service')}\n`;
+      `Name: ${data.get('name')}\nCompany: ${data.get('company') || 'Not specified'}\nSupport: ${data.get('service')}\n`;
     document.querySelector('#email-draft').value = `To: ${address}\nSubject: ${subject}\n\n${body}`;
     document.querySelector('#draft-fallback').hidden = false;
     document.querySelector('#email-status').textContent =

@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Eric Chang — personal site stylesheet
+   GridWave Power Consulting — site stylesheet
    Drawing-sheet aesthetic: paper ground, ink navy, hairline rules,
    monospaced annotation for labels and data.
    ========================================================================== */
@@ -282,12 +282,12 @@ footer .brand-text small { color: rgba(255,255,255,.6); }
 .register + .fineprint { margin-top: 24px; }
 @media (max-width: 600px) { .search-label { justify-content: stretch; } .search-label input { width: 100%; } }
 
-/* ---------- Profile band ---------- */
-.profile-band { padding-block: var(--section); background: var(--surface); border-top: 1px solid var(--line); }
-.profile-teaser { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: clamp(28px, 5vw, 72px); align-items: center; }
-.profile-teaser img { width: 100%; aspect-ratio: 1; object-fit: cover; filter: saturate(.85); }
-.profile-teaser h2 + p { margin: 20px 0 24px; color: var(--muted); max-width: 38em; }
-@media (max-width: 640px) { .profile-teaser { grid-template-columns: 1fr; } .profile-teaser .frame { max-width: 200px; } }
+/* ---------- Founder band ---------- */
+.founder-band { padding-block: var(--section); background: var(--surface); border-top: 1px solid var(--line); }
+.founder-teaser { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: clamp(28px, 5vw, 72px); align-items: center; }
+.founder-teaser img { width: 100%; aspect-ratio: 1; object-fit: cover; filter: saturate(.85); }
+.founder-teaser h2 + p { margin: 20px 0 24px; color: var(--muted); max-width: 38em; }
+@media (max-width: 640px) { .founder-teaser { grid-template-columns: 1fr; } .founder-teaser .frame { max-width: 200px; } }
 
 /* ---------- CTA band ---------- */
 .cta-band { background: var(--navy); color: #fff; padding-block: clamp(56px, 7vw, 88px); position: relative; isolation: isolate; overflow: hidden; }
@@ -405,10 +405,10 @@ footer { background: #071a26; color: rgba(255,255,255,.78); font-size: 0.9375rem
 .email-link:hover { color: var(--teal-bright); }
 .copy-button { background: transparent; border: 1px solid rgba(255,255,255,.4); border-radius: var(--radius); color: #fff; padding: 9px 14px; font-family: var(--mono); font-size: 0.75rem; letter-spacing: .08em; text-transform: uppercase; cursor: pointer; }
 .copy-button:hover { border-color: var(--teal-bright); color: var(--teal-bright); }
-.contact-person { display: flex; gap: 16px; align-items: center; margin-top: 40px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,.2); }
-.contact-person img { width: 64px; height: 64px; object-fit: cover; }
-.contact-person strong { display: block; font-weight: 500; }
-.contact-person span { font-size: 0.875rem; color: rgba(255,255,255,.7); }
+.contact-founder { display: flex; gap: 16px; align-items: center; margin-top: 40px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,.2); }
+.contact-founder img { width: 64px; height: 64px; object-fit: cover; }
+.contact-founder strong { display: block; font-weight: 500; }
+.contact-founder span { font-size: 0.875rem; color: rgba(255,255,255,.7); }
 .enquiry-panel { background: var(--surface); border: 1px solid var(--line-strong); padding: clamp(28px, 4vw, 48px); }
 .enquiry-panel h2 + p { margin: 16px 0 28px; color: var(--muted); }
 form { display: grid; gap: 20px; }

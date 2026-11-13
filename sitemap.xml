@@ -1,2 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://gridwavepower.com/</loc></url><url><loc>https://gridwavepower.com/services.html</loc></url><url><loc>https://gridwavepower.com/expertise.html</loc></url><url><loc>https://gridwavepower.com/projects.html</loc></url><url><loc>https://gridwavepower.com/about.html</loc></url><url><loc>https://gridwavepower.com/contact.html</loc></url><url><loc>https://gridwavepower.com/projects/fengmiao.html</loc></url><url><loc>https://gridwavepower.com/projects/coastal-virginia.html</loc></url><url><loc>https://gridwavepower.com/projects/formosa-4.html</loc></url><url><loc>https://gridwavepower.com/projects/greater-changhua-2b-4.html</loc></url><url><loc>https://gridwavepower.com/projects/greater-changhua-1-2a.html</loc></url><url><loc>https://gridwavepower.com/projects/mailiao.html</loc></url></urlset>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://gridwavepower.com/</loc></url>
+  <url><loc>https://gridwavepower.com/about.html</loc></url>
+  <url><loc>https://gridwavepower.com/contact.html</loc></url>
+  <url><loc>https://gridwavepower.com/expertise.html</loc></url>
+  <url><loc>https://gridwavepower.com/projects.html</loc></url>
+  <url><loc>https://gridwavepower.com/services.html</loc></url>
+  <url><loc>https://gridwavepower.com/projects/coastal-virginia.html</loc></url>
+  <url><loc>https://gridwavepower.com/projects/east-anglia-one-north.html</loc></url>
+  <url><loc>https://gridwavepower.com/projects/fengmiao.html</loc></url>
+  <url><loc>https://gridwavepower.com/projects/formosa-4.html</loc></url>
+  <url><loc>https://gridwavepower.com/projects/greater-changhua-1-2a.html</loc></url>
+  <url><loc>https://gridwavepower.com/projects/greater-changhua-2b-4.html</loc></url>
+  <url><loc>https://gridwavepower.com/projects/mailiao.html</loc></url>
+</urlset>

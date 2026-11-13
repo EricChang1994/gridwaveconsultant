@@ -6,7 +6,7 @@
     "country": "United Kingdom",
     "location": "Southern North Sea, off Suffolk, United Kingdom",
     "capacity": "Aug 2026 – Present",
-    "capacity_label": "My involvement",
+    "capacity_label": "Founder’s involvement",
     "category": "offshore",
     "discipline": "HV & protection interfaces",
     "image": "offshore-substation-yard.webp",
@@ -14,15 +14,15 @@
     "role": "HV & protection interface coordination · August 2026 – Present",
     "voltage": "HV & protection",
     "intro": "Connecting HV and protection interfaces, wiring documentation and multidisciplinary layout coordination for an offshore substation.",
-    "overview": "East Anglia ONE North is an offshore wind development in the southern North Sea off the Suffolk coast, developed by East Anglia ONE North Ltd within ScottishPower Renewables’ East Anglia portfolio. It forms part of the East Anglia Hub and received development consent in March 2022. My work focuses on the offshore substation’s HV, protection and selected mechanical-system electrical interfaces.",
-    "note": "The period shown is my own involvement, beginning in August 2026, rather than the overall project schedule.",
+    "overview": "East Anglia ONE North is an offshore wind development in the southern North Sea off the Suffolk coast, developed by East Anglia ONE North Ltd within ScottishPower Renewables’ East Anglia portfolio. It forms part of the East Anglia Hub and received development consent in March 2022. The founder’s work focuses on the offshore substation’s HV, protection and selected mechanical-system electrical interfaces.",
+    "note": "The period shown is the founder’s involvement, beginning in August 2026, rather than the overall project schedule. Responsibilities below are based on the founder’s October 2026 update.",
     "facts": [
       [
         "Developer portfolio",
         "ScottishPower Renewables"
       ],
       [
-        "My involvement",
+        "Founder’s involvement",
         "August 2026 – Present"
       ],
       [
@@ -48,7 +48,7 @@
         "Develop electrical system designs for selected critical mechanical systems: the Oil Water Separator, Clean Water System, Condition Monitoring System and Main Crane System."
       ]
     ],
-    "perspective": "Clear wiring documentation and coordinated electrical, structural and spatial interfaces help teams resolve integration questions during design. It is the kind of work that connects HV and protection packages with the wider offshore substation.",
+    "perspective": "Clear wiring documentation and coordinated electrical, structural and spatial interfaces help teams resolve integration questions during design. This experience supports consulting scopes that connect HV and protection packages with the wider offshore substation.",
     "services": [
       "interface-advisory",
       "package-management"
@@ -85,7 +85,7 @@
     "voltage": "66 / 220 kV",
     "intro": "Connecting detailed engineering, equipment procurement and fabrication-yard delivery for a major offshore substation.",
     "overview": "Fengmiao I is a 495 MW offshore wind development off Taiwan’s west coast. Developed through a Copenhagen Infrastructure Partners fund, with Copenhagen Offshore Partners leading development, it reached financial close in March 2025. The planned wind farm comprises 33 Vestas 15 MW turbines, with construction completion targeted for the end of 2027 in the developer’s announcement.",
-    "note": "495 MW is the wind farm’s planned installed capacity. Its auction allocation was 500 MW of grid capacity; the offshore substation scope I worked on is described as 500 MW.",
+    "note": "495 MW is the wind farm’s planned installed capacity. Its auction allocation was 500 MW of grid capacity; the founder’s CV describes the 500 MW offshore substation scope.",
     "facts": [
       [
         "Developer / investment platform",
@@ -149,7 +149,7 @@
     "voltage": "HV packages",
     "intro": "Translating project requirements into structured acceptance testing for utility-scale offshore electrical infrastructure.",
     "overview": "Coastal Virginia Offshore Wind is Dominion Energy’s commercial offshore wind development off Virginia Beach. The US Bureau of Ocean Energy Management approved a configuration of 176 wind turbines and three offshore substations, with an estimated capacity of approximately 2,600 MW. Semco Maritime’s consortium announcement describes three 880 MW offshore substations forming the electrical backbone of the development.",
-    "note": "The public project description uses approximately 2.6 GW; some summaries round this to 2.7 GW.",
+    "note": "The public project description uses approximately 2.6 GW. This replaces the rounded 2.7 GW figure in the previous website and founder’s CV.",
     "facts": [
       [
         "Developer / utility",
@@ -296,7 +296,7 @@
         "66 × 14 MW"
       ],
       [
-        "Yard interface in my scope",
+        "Yard interface in founder’s scope",
         "Seatrium, Singapore"
       ]
     ],
@@ -353,14 +353,14 @@
     "voltage": "161 kV grid interface",
     "intro": "Bringing OEM equipment, local EPC delivery and protection systems together at the onshore grid interface.",
     "overview": "Greater Changhua 1 and 2a is a 900 MW offshore wind development in Taiwan. Ørsted inaugurated the wind farms in April 2024 and reported that they were operating and fully connected to the grid. The developer’s milestone record notes onshore substation energization in February 2022 and first wind farm power in April 2022.",
-    "note": "My experience described here concerns the onshore substation and grid integration scope, rather than the full offshore construction programme.",
+    "note": "The founder’s experience described here concerns the onshore substation and grid integration scope, rather than the full offshore construction programme.",
     "facts": [
       [
         "Developer",
         "Ørsted"
       ],
       [
-        "My focus",
+        "Founder’s focus",
         "Onshore substation"
       ],
       [
@@ -415,7 +415,7 @@
     "role": "Electrical O&M engineer · 2020–2021",
     "voltage": "161 / 33 kV",
     "intro": "Practical experience with high-voltage asset maintenance, emergency repairs and transformer engineering in an operating industrial environment.",
-    "overview": "Mai-Liao Power Corporation was established in 1996 by companies within the Formosa group. Its original independent power project comprised three 600 MW generating units, commissioned between 1999 and 2000, at the Mailiao industrial park in Yunlin County. This profile focuses on my 2020–2021 high-voltage operations and maintenance experience.",
+    "overview": "Mai-Liao Power Corporation was established in 1996 by companies within the Formosa group. Its original independent power project comprised three 600 MW generating units, commissioned between 1999 and 2000, at the Mailiao industrial park in Yunlin County. This profile focuses on the founder’s 2020–2021 high-voltage operations and maintenance experience.",
     "note": "1.8 GW describes the original three-unit project relevant to this experience. It is not a statement of the plant’s current operating capacity or the capacity of the wider industrial complex.",
     "facts": [
       [
@@ -427,7 +427,7 @@
         "June 2020 – August 2021"
       ],
       [
-        "My focus",
+        "Founder’s focus",
         "HV assets, protection and transformers"
       ]
     ],

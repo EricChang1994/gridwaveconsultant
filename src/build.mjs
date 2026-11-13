@@ -1,4 +1,4 @@
-// Personal site generator — no dependencies.
+// GridWave site generator — no dependencies.
 //
 //   node src/build.mjs
 //
@@ -14,13 +14,8 @@ const SRC = dirname(fileURLToPath(import.meta.url));
 const OUT = join(SRC, '..');
 
 const SITE = {
-  // Public address of the site, without a trailing slash, e.g. 'https://ericchang.dev'
-  // or 'https://<user>.github.io/<repo>'. Leave empty until it is known: canonical
-  // links, social-preview URLs and sitemap.xml are only written when this is set.
-  url: '',
-  name: 'Eric Chang, PE, PMP',
-  fullName: 'Wen Jui (Eric) Chang',
-  role: 'HV & Power Infrastructure Engineer',
+  url: 'https://gridwavepower.com',
+  name: 'GridWave Power Consulting',
   email: 'ericchangpe@gmail.com',
   linkedin: 'https://www.linkedin.com/in/wen-jui-eric-chang-pe-pmp-022a58127',
   year: 2026,
@@ -28,11 +23,11 @@ const SITE = {
   featured: ['east-anglia-one-north', 'fengmiao', 'greater-changhua-1-2a'],
 };
 
-const FOCUS = {
-  'owners-engineering': 'Requirements & technical review',
-  'package-management': 'HV package engineering',
+const SERVICES = {
+  'owners-engineering': 'Owner’s engineering',
+  'package-management': 'HV package management',
   'commissioning': 'Commissioning & energization',
-  'interface-advisory': 'Interface coordination',
+  'interface-advisory': 'Interface & delivery advisory',
 };
 const CATEGORIES = { offshore: 'Offshore wind', grid: 'Grid integration', operations: 'Operations' };
 const NUMBER_WORDS = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve'];
@@ -45,26 +40,26 @@ const projects = JSON.parse(readFileSync(join(SRC, 'projects.json'), 'utf8'));
 
 /* ---------- Shared chrome ---------- */
 
-const brand = (root) => `<a class="brand" href="${root}index.html" aria-label="Eric Chang — home">
-        <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="6" fill="#0b2434"/><path d="M10 18h16v6H16v5h9v6h-9v5h10v6H10z" fill="#62d2cd"/><path d="M54 23a13 13 0 1 0 0 18" fill="none" stroke="#62d2cd" stroke-width="6"/></svg>
-        <span class="brand-text"><b>Eric Chang</b><small>PE · PMP® · HV Engineer</small></span>
+const brand = (root) => `<a class="brand" href="${root}index.html" aria-label="GridWave home">
+        <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="6" fill="#0b2434"/><path d="M13 46V34h9v12zm14 0V24h9v22zm14 0V14h9v32z" fill="#62d2cd"/></svg>
+        <span class="brand-text"><b>GridWave</b><small>Power Consulting</small></span>
       </a>`;
 
 function layout({ file, title, fullTitle, ogTitle, description, current = '', root = '', body, noindex = false, cta = true }) {
   const pageTitle = fullTitle || `${title} | ${SITE.name}`;
-  const og = ogTitle || pageTitle;
-  const canonical = SITE.url ? `${SITE.url}/${file === 'index.html' ? '' : file}` : '';
+  const og = ogTitle || `${title} | GridWave`;
+  const canonical = `${SITE.url}/${file === 'index.html' ? '' : file}`;
   const navLink = (key, href, label) =>
     `<a href="${root}${href}"${current === key ? ' aria-current="page"' : ''}>${label}</a>`;
   const jsonLd = file === 'index.html' ? `
   <script type="application/ld+json">${JSON.stringify({
     '@context': 'https://schema.org',
-    '@type': 'Person',
-    name: SITE.fullName,
-    alternateName: 'Eric Chang',
-    jobTitle: SITE.role,
-    honorificSuffix: 'PE, PMP',
-    ...(SITE.url ? { url: SITE.url, image: `${SITE.url}/assets/eric-chang.webp` } : {}),
+    '@type': 'ProfessionalService',
+    name: 'GridWave Power Consulting LLC',
+    url: SITE.url,
+    image: `${SITE.url}/assets/offshore-substation-yard.webp`,
+    description: 'Independent HV engineering consulting for offshore wind, substations, package management and commissioning.',
+    founder: { '@type': 'Person', name: 'Wen Jui (Eric) Chang', sameAs: SITE.linkedin },
     sameAs: [SITE.linkedin],
   })}</script>` : '';
 
@@ -75,12 +70,15 @@ function layout({ file, title, fullTitle, ogTitle, description, current = '', ro
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>${esc(pageTitle)}</title>
   <meta name="description" content="${esc(description)}">${noindex ? '\n  <meta name="robots" content="noindex">' : ''}
-  <meta name="author" content="${SITE.fullName}">
-  <meta name="theme-color" content="#0b2434">${canonical ? `\n  <link rel="canonical" href="${canonical}">` : ''}
-  <meta property="og:type" content="${file === 'index.html' ? 'profile' : 'website'}">
+  <meta name="theme-color" content="#0b2434">
+  <link rel="canonical" href="${canonical}">
+  <meta property="og:type" content="website">
   <meta property="og:site_name" content="${SITE.name}">
   <meta property="og:title" content="${esc(og)}">
-  <meta property="og:description" content="${esc(description)}">${canonical ? `\n  <meta property="og:url" content="${canonical}">\n  <meta property="og:image" content="${SITE.url}/assets/offshore-substation-yard.webp">\n  <meta name="twitter:card" content="summary_large_image">` : ''}
+  <meta property="og:description" content="${esc(description)}">
+  <meta property="og:url" content="${canonical}">
+  <meta property="og:image" content="${SITE.url}/assets/offshore-substation-yard.webp">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="${root}assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -95,11 +93,11 @@ function layout({ file, title, fullTitle, ogTitle, description, current = '', ro
       ${brand(root)}
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu <i aria-hidden="true"></i></button>
       <nav id="primary-nav" aria-label="Main navigation">
-        ${navLink('focus', 'focus.html', 'Focus areas')}
+        ${navLink('services', 'services.html', 'Services')}
         ${navLink('expertise', 'expertise.html', 'Expertise')}
-        ${navLink('projects', 'projects.html', 'Experience')}
+        ${navLink('projects', 'projects.html', 'Projects')}
         ${navLink('about', 'about.html', 'About')}
-        <a class="nav-cta" href="${root}contact.html"${current === 'contact' ? ' aria-current="page"' : ''}>Get in touch <span aria-hidden="true">→</span></a>
+        <a class="nav-cta" href="${root}contact.html"${current === 'contact' ? ' aria-current="page"' : ''}>Let’s talk <span aria-hidden="true">→</span></a>
       </nav>
     </div>
   </header>
@@ -110,10 +108,10 @@ ${cta ? `
 <section class="cta-band">
   <div class="container cta-inner">
     <div>
-      <p class="eyebrow">Get in touch</p>
-      <h2>Working on an HV scope? I’m happy to compare notes.</h2>
+      <p class="eyebrow">Start a conversation</p>
+      <h2>Let’s connect the engineering to your next milestone.</h2>
     </div>
-    <a class="button light" href="${root}contact.html">Contact me ${arrow}</a>
+    <a class="button light" href="${root}contact.html">Discuss your project ${arrow}</a>
   </div>
 </section>` : ''}
   </main>
@@ -122,25 +120,25 @@ ${cta ? `
     <div class="container footer-grid">
       <div>
         ${brand(root)}
-        <p>High-voltage engineering,<br>from concept to connection.</p>
+        <p>Independent engineering.<br>Connected project thinking.</p>
       </div>
       <div>
         <p class="eyebrow">Explore</p>
-        <a href="${root}focus.html">Focus areas</a>
+        <a href="${root}services.html">Services</a>
         <a href="${root}expertise.html">Technical expertise</a>
         <a href="${root}projects.html">Project experience</a>
-        <a href="${root}about.html">About me</a>
+        <a href="${root}about.html">About GridWave</a>
       </div>
       <div>
         <p class="eyebrow">Connect</p>
         <a href="mailto:${SITE.email}">${SITE.email}</a>
         <a href="${SITE.linkedin}" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
-        <a href="${root}contact.html">Contact</a>
+        <a href="${root}contact.html">Discuss a project</a>
       </div>
     </div>
     <div class="container footer-bottom">
-      <span>© ${SITE.year} ${SITE.fullName}</span>
-      <span>Personal site · views are my own</span>
+      <span>© ${SITE.year} GridWave Power Consulting LLC</span>
+      <span>HV &amp; Power Infrastructure Engineering</span>
       <a href="#top">Back to top ↑</a>
     </div>
   </footer>
@@ -166,7 +164,7 @@ function register(list, root) {
         </a>
       </li>`;
   });
-  return `<div class="register-head" aria-hidden="true"><span>No.</span><span>Project</span><span>My scope</span><span>Location</span><span>Scale / period</span><span></span></div>
+  return `<div class="register-head" aria-hidden="true"><span>No.</span><span>Project</span><span>Founder’s scope</span><span>Location</span><span>Scale / period</span><span></span></div>
     <ol class="register">
 ${rows.join('\n')}
     </ol>`;
@@ -184,14 +182,14 @@ function projectPage(p, i) {
     .map(([h, t], n) => `        <article class="work-item"><span>${pad(n + 1)}</span><div><h3>${esc(h)}</h3><p>${esc(t)}</p></div></article>`).join('\n');
   const tags = p.tags.map((t) => `<span>${esc(t)}</span>`).join('');
   const related = p.services
-    .map((s) => `<a href="${root}focus.html#${s}">${esc(FOCUS[s])} →</a>`).join('');
+    .map((s) => `<a href="${root}services.html#${s}">${esc(SERVICES[s])} →</a>`).join('');
   const sources = p.sources
     .map(([org, label, url]) => `          <li><a href="${esc(url)}" target="_blank" rel="noopener noreferrer"><strong>${esc(org)} ↗</strong><span>${esc(label)}</span></a></li>`).join('\n');
 
   const body = `
 <section class="project-heading gridded">
   <div class="container">
-    <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="${root}index.html">Home</a><span aria-hidden="true">/</span><a href="${root}projects.html">Experience</a><span aria-hidden="true">/</span><span aria-current="page">${esc(p.name)}</span></nav>
+    <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="${root}index.html">Home</a><span aria-hidden="true">/</span><a href="${root}projects.html">Projects</a><span aria-hidden="true">/</span><span aria-current="page">${esc(p.name)}</span></nav>
     <p class="eyebrow">Project ${no} / ${esc(p.country)} / ${esc(p.subtitle)}</p>
     <h1>${esc(p.name)}</h1>
     <p class="lead">${esc(p.intro)}</p>
@@ -201,8 +199,8 @@ function projectPage(p, i) {
 <div class="container">
   <dl class="title-block">
     <div><dt>${esc(p.capacity_label)}</dt><dd class="big">${esc(p.capacity)}</dd></div>
-    <div><dt>My technical scope</dt><dd class="big">${esc(p.voltage)}</dd></div>
-    <div><dt>Employer</dt><dd class="big">${esc(p.employer)}</dd></div>
+    <div><dt>Founder’s technical scope</dt><dd class="big">${esc(p.voltage)}</dd></div>
+    <div><dt>Employer during involvement</dt><dd class="big">${esc(p.employer)}</dd></div>
     <div><dt>Location</dt><dd>${esc(p.location)}</dd></div>
     <div><dt>Discipline</dt><dd>${esc(p.discipline)}</dd></div>
     <div><dt>Profile</dt><dd>${no} of ${pad(projects.length)}<small>${esc(CATEGORIES[p.category])}</small></dd></div>
@@ -214,11 +212,11 @@ function projectPage(p, i) {
     <p class="eyebrow">In this profile</p>
     <nav aria-label="Project sections">
       <a href="#overview">Project overview</a>
-      <a href="#contribution">My contribution</a>
+      <a href="#contribution">Founder’s contribution</a>
       <a href="#perspective">Engineering perspective</a>
       <a href="#sources">Sources &amp; notes</a>
     </nav>
-    <a class="text-link" href="${root}contact.html?project=${p.slug}">Ask about this work ${arrow}</a>
+    <a class="text-link" href="${root}contact.html?project=${p.slug}">Discuss a similar scope ${arrow}</a>
   </aside>
 
   <div class="project-story">
@@ -233,17 +231,17 @@ ${facts}
     </section>
 
     <section id="contribution">
-      <p class="eyebrow">My role</p>
-      <h2>My contribution</h2>
+      <p class="eyebrow">Personal professional experience</p>
+      <h2>Founder’s contribution</h2>
       <div class="role-line"><strong>${esc(p.role)}</strong><span>${esc(p.employer)}</span></div>
 ${work}
       <div class="tags">${tags}</div>
-      <p class="fineprint">This describes my own scope while employed at ${esc(p.employer)}. Public project sources provide background and do not independently verify individual responsibilities.</p>
+      <p class="fineprint">Personal scope is based on the founder’s CV and professional updates. Public project sources provide background and do not independently verify individual responsibilities.</p>
     </section>
 
     <section id="perspective" class="perspective">
       <p class="eyebrow">Engineering perspective</p>
-      <h2>What I took from it</h2>
+      <h2>What this experience brings</h2>
       <p>${esc(p.perspective)}</p>
       <div class="related-services">${related}</div>
     </section>
@@ -254,7 +252,7 @@ ${work}
       <ul class="source-list">
 ${sources}
       </ul>
-      <p class="fineprint">Public sources reviewed ${esc(p.reviewed || SITE.defaultReviewed)}. Project figures and milestones are attributed to the linked publications; announced dates may change. Project and company names identify my professional experience and do not imply endorsement by, or that I speak for, those organisations.</p>
+      <p class="fineprint">Public sources reviewed ${esc(p.reviewed || SITE.defaultReviewed)}. Project figures and milestones are attributed to the linked publications; announced dates may change. Project names identify professional experience and do not imply endorsement or a commercial relationship with GridWave.</p>
     </section>
   </div>
 </div>
@@ -291,9 +289,7 @@ for (const name of readdirSync(join(SRC, 'pages')).filter((f) => f.endsWith('.ht
   const match = raw.match(/^<!--meta\s*([\s\S]*?)\s*-->/);
   if (!match) throw new Error(`${name}: missing <!--meta {...} --> header`);
   const meta = JSON.parse(match[1]);
-  // 404.html is served for any missing path, at any depth, so once the public
-  // address is known its links are written from the site's base path instead.
-  const root = meta.file === '404.html' && SITE.url ? new URL(`${SITE.url}/`).pathname : (meta.root ?? '');
+  const root = meta.root ?? '';
   const tokens = {
     root,
     email: SITE.email,
@@ -312,16 +308,10 @@ for (const name of readdirSync(join(SRC, 'pages')).filter((f) => f.endsWith('.ht
 
 projects.forEach((p, i) => write(`projects/${p.slug}.html`, projectPage(p, i)));
 
-const pages = written.filter((f) => f !== '404.html');
-if (SITE.url) {
-  const urls = pages
-    .sort((a, b) => (a === 'index.html' ? -1 : b === 'index.html' ? 1 : a.split('/').length - b.split('/').length || a.localeCompare(b)))
-    .map((f) => `  <url><loc>${SITE.url}/${f === 'index.html' ? '' : f}</loc></url>`);
-  write('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.join('\n')}\n</urlset>\n`);
-  write('robots.txt', `User-agent: *\nAllow: /\nSitemap: ${SITE.url}/sitemap.xml\n`);
-} else {
-  write('robots.txt', 'User-agent: *\nAllow: /\n');
-  console.log('Note: SITE.url is empty — canonical links and sitemap.xml were skipped.');
-}
+const sitemapUrls = written
+  .filter((f) => f !== '404.html')
+  .sort((a, b) => (a === 'index.html' ? -1 : b === 'index.html' ? 1 : a.split('/').length - b.split('/').length || a.localeCompare(b)))
+  .map((f) => `  <url><loc>${SITE.url}/${f === 'index.html' ? '' : f}</loc></url>`);
+write('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${sitemapUrls.join('\n')}\n</urlset>\n`);
 
 console.log(`Built ${written.length} files:\n` + written.map((f) => `  ${f}`).join('\n'));
