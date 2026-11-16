@@ -9,6 +9,7 @@
 import { readFileSync, writeFileSync, mkdirSync, readdirSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { buildLocales } from './localize.mjs';
 
 const SRC = dirname(fileURLToPath(import.meta.url));
 const OUT = join(SRC, '..');
@@ -91,6 +92,11 @@ function layout({ file, title, fullTitle, ogTitle, description, current = '', ro
   <header class="site-header">
     <div class="container nav-wrap">
       ${brand(root)}
+      <div class="language-switch" role="group" aria-label="Language">
+        <a href="${root}${file}" data-language="en" lang="en" hreflang="en" aria-current="true">EN</a>
+        <span aria-hidden="true">/</span>
+        <a href="${root}zh-TW/${file}" data-language="zh-TW" lang="zh-Hant" hreflang="zh-TW">繁體中文</a>
+      </div>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu <i aria-hidden="true"></i></button>
       <nav id="primary-nav" aria-label="Main navigation">
         ${navLink('services', 'services.html', 'Services')}
@@ -212,7 +218,7 @@ function projectPage(p, i) {
     <p class="eyebrow">In this profile</p>
     <nav aria-label="Project sections">
       <a href="#overview">Project overview</a>
-      <a href="#contribution">Founder’s contribution</a>
+      <a href="#contribution">Project Role &amp; Responsibilities</a>
       <a href="#perspective">Engineering perspective</a>
       <a href="#sources">Sources &amp; notes</a>
     </nav>
@@ -232,7 +238,7 @@ ${facts}
 
     <section id="contribution">
       <p class="eyebrow">Personal professional experience</p>
-      <h2>Founder’s contribution</h2>
+      <h2>Project Role &amp; Responsibilities</h2>
       <div class="role-line"><strong>${esc(p.role)}</strong><span>${esc(p.employer)}</span></div>
 ${work}
       <div class="tags">${tags}</div>
@@ -315,3 +321,5 @@ const sitemapUrls = written
 write('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${sitemapUrls.join('\n')}\n</urlset>\n`);
 
 console.log(`Built ${written.length} files:\n` + written.map((f) => `  ${f}`).join('\n'));
+
+buildLocales(OUT, SITE.url, written.filter((file) => file.endsWith('.html')));

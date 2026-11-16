@@ -73,3 +73,20 @@ git push -u origin main
 - 聯絡表單只會開啟使用者自己的郵件程式並帶入草稿，網站不傳送也不儲存任何資料。網站沒有分析追蹤；字體由 Google Fonts 載入，載入失敗時改用系統字體。
 
 © 2026 GridWave Power Consulting LLC. All rights reserved.
+
+
+## 中英文版本
+
+- 預設首頁 `index.html` 為英文；繁體中文首頁為 `zh-TW/index.html`。
+- 全站右上角提供 EN／繁體中文切換，會切換到對應頁面，並保留網址的專案／服務參數與章節。
+- 中文版的站內導覽會維持中文；不依瀏覽器語言自動跳轉，因此預設仍為英文。
+- 請繼續修改 `src/pages/`、`src/projects.json` 及共用版型；繁體中文文字對照集中於 `src/zh-TW.json`，由 `src/localize.mjs` 產生中文靜態頁。新增文字時請在對照表補上翻譯，產生器會檢查未登錄的頁面文字。
+- 執行 `node src/build.mjs` 會一次更新全部 14 個英文頁面、14 個中文頁面與雙語 sitemap，無需安裝套件。
+- 表單的專案預填、服務選擇、郵件草稿、搜尋結果計數及複製提示均支援中英文。
+- 上傳網站時請包含 `zh-TW/` 目錄；原有 GitHub Pages 設定與網域保持相同。
+- East Anglia ONE North 的顯示容量已設為 **800MW**；原有創辦人參與期間保留在專案事實與職責說明中。
+
+
+## 專案名稱與小標更新
+
+繁體中文版中，除麥寮發電廠外，專案名稱皆保留英文。專案 01–05 小標為 Offshore substation／海上變電站；06 為 Onshore substation／陸域變電站；07 為 Power plant operation／電廠維護運轉。英文頁與中文頁各顯示對應語言，並同步套用於首頁、專案列表、詳情頁及聯絡表單的專案名稱。

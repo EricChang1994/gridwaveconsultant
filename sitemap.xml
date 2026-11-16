@@ -1,16 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://gridwavepower.com/</loc></url>
-  <url><loc>https://gridwavepower.com/about.html</loc></url>
-  <url><loc>https://gridwavepower.com/contact.html</loc></url>
-  <url><loc>https://gridwavepower.com/expertise.html</loc></url>
-  <url><loc>https://gridwavepower.com/projects.html</loc></url>
-  <url><loc>https://gridwavepower.com/services.html</loc></url>
-  <url><loc>https://gridwavepower.com/projects/coastal-virginia.html</loc></url>
-  <url><loc>https://gridwavepower.com/projects/east-anglia-one-north.html</loc></url>
-  <url><loc>https://gridwavepower.com/projects/fengmiao.html</loc></url>
-  <url><loc>https://gridwavepower.com/projects/formosa-4.html</loc></url>
-  <url><loc>https://gridwavepower.com/projects/greater-changhua-1-2a.html</loc></url>
-  <url><loc>https://gridwavepower.com/projects/greater-changhua-2b-4.html</loc></url>
-  <url><loc>https://gridwavepower.com/projects/mailiao.html</loc></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url><loc>https://gridwavepower.com/about.html</loc><xhtml:link rel="alternate" hreflang="en" href="https://gridwavepower.com/about.html"/><xhtml:link rel="alternate" hreflang="zh-TW" href="https://gridwavepower.com/zh-TW/about.html"/></url>
+  <url><loc>https://gridwavepower.com/zh-TW/about.html</loc><xhtml:link rel="alternate" hreflang="en" href="https://gridwavepower.com/about.html"/><xhtml:link rel="alternate" hreflang="zh-TW" href="https://gridwavepower.com/zh-TW/about.html"/></url>
+  <url><loc>https://gridwavepower.com/contact.html</loc><xhtml:link rel="alternate" hreflang="en" href="https://gridwavepower.com/contact.html"/><xhtml:link rel="alternate" hreflang="zh-TW" href="https://gridwavepower.com/zh-TW/contact.html"/></url>
+  <url><loc>https://gridwavepower.com/zh-TW/contact.html</loc><xhtml:link rel="alternate" hreflang="en" href="https://gridwavepower.com/contact.html"/><xhtml:link rel="alternate" hreflang="zh-TW" href="https://gridwavepower.com/zh-TW/contact.html"/></url>
+  <url><loc>https://gridwavepower.com/expertise.html</loc><xhtml:link rel="alternate" hreflang="en" href="https://gridwavepower.com/expertise.html"/><xhtml:link rel="alternate" hreflang="zh-TW" href="https://gridwavepower.com/zh-TW/expertise.html"/></url>
+  <url><loc>https://gridwavepower.com/zh-TW/expertise.html</loc><xhtml:link rel="alternate" hreflang="en" href="https://gridwavepower.com/expertise.html"/><xhtml:link rel="alternate" hreflang="zh-TW" href="https://gridwavepower.com/zh-TW/expertise.html"/></url>
+  <url><loc>https://gridwavepower.com/</loc><xhtml:link rel="alternate" hreflang="en" href="https://gridwavepower.com/"/><xhtml:link rel="alternate" hreflang="zh-TW" href="https://gridwavepower.com/zh-TW/"/></url>
+  <url><loc>https://gridwavepower.com/zh-TW/</loc><xhtml:link rel="alternate" hreflang="en" href="https://gridwavepower.com/"/><xhtml:link rel="alternate" hreflang="zh-TW" href="https://gridwavepower.com/zh-TW/"/></url>
+  <url><loc>https://gridwavepower.com/projects.html</loc><xhtml:link rel="alternate" hreflang="en" href="https://gridwavepower.com/projects.html"/><xhtml:link rel="alternate" hreflang="zh-TW" href="https://gridwavepower.com/zh-TW/projects.html"/></url>
+  <url><loc>https://gridwavepower.com/zh-TW/projects.html</loc><xhtml:link rel="alternate" hreflang="en" href="https://gridwavepower.com/projects.html"/><xhtml:link rel="alternate" hreflang="zh-TW" href="https://gridwavepower.com/zh-TW/projects.html"/></url>
+  <url><loc>https://gridwavepower.com/services.html</loc><xhtml:link rel="alternate" hreflang="en" href="https://gridwavepower.com/services.html"/><xhtml:link rel="alternate" hreflang="zh-TW" href="https://gridwavepower.com/zh-TW/services.html"/></url>
+  <url><loc>https://gridwavepower.com/zh-TW/services.html</loc><xhtml:link rel="alternate" hreflang="en" href="https://gridwavepower.com/services.html"/><xhtml:link rel="alternate" hreflang="zh-TW" href="https://gridwavepower.com/zh-TW/services.html"/></url>
+  <url><loc>https://gridwavepower.com/projects/east-anglia-one-north.html</loc><xhtml:link rel="alternate" hreflang="en" href="https://gridwavepower.com/projects/east-anglia-one-north.html"/><xhtml:link rel="alternate" hreflang="zh-TW" href="https://gridwavepower.com/zh-TW/projects/east-anglia-one-north.html"/></url>
+  <url><loc>https://gridwavepower.com/zh-TW/projects/east-anglia-one-north.html</loc><xhtml:link rel="alternate" hreflang="en" href="https://gridwavepower.com/projects/east-anglia-one-north.html"/><xhtml:link rel="alternate" hreflang="zh-TW" href="https://gridwavepower.com/zh-TW/projects/east-anglia-one-north.html"/></url>
+  <url><loc>https://gridwavepower.com/projects/fengmiao.html</loc><xhtml:link rel="alternate" hreflang="en" href="https://gridwavepower.com/projects/fengmiao.html"/><xhtml:link rel="alternate" hreflang="zh-TW" href="https://gridwavepower.com/zh-TW/projects/fengmiao.html"/></url>
+  <url><loc>https://gridwavepower.com/zh-TW/projects/fengmiao.html</loc><xhtml:link rel="alternate" hreflang="en" href="https://gridwavepower.com/projects/fengmiao.html"/><xhtml:link rel="alternate" hreflang="zh-TW" href="https://gridwavepower.com/zh-TW/projects/fengmiao.html"/></url>
+  <url><loc>https://gridwavepower.com/projects/coastal-virginia.html</loc><xhtml:link rel="alternate" hreflang="en" href="https://gridwavepower.com/projects/coastal-virginia.html"/><xhtml:link rel="alternate" hreflang="zh-TW" href="https://gridwavepower.com/zh-TW/projects/coastal-virginia.html"/></url>
+  <url><loc>https://gridwavepower.com/zh-TW/projects/coastal-virginia.html</loc><xhtml:link rel="alternate" hreflang="en" href="https://gridwavepower.com/projects/coastal-virginia.html"/><xhtml:link rel="alternate" hreflang="zh-TW" href="https://gridwavepower.com/zh-TW/projects/coastal-virginia.html"/></url>
+  <url><loc>https://gridwavepower.com/projects/formosa-4.html</loc><xhtml:link rel="alternate" hreflang="en" href="https://gridwavepower.com/projects/formosa-4.html"/><xhtml:link rel="alternate" hreflang="zh-TW" href="https://gridwavepower.com/zh-TW/projects/formosa-4.html"/></url>
+  <url><loc>https://gridwavepower.com/zh-TW/projects/formosa-4.html</loc><xhtml:link rel="alternate" hreflang="en" href="https://gridwavepower.com/projects/formosa-4.html"/><xhtml:link rel="alternate" hreflang="zh-TW" href="https://gridwavepower.com/zh-TW/projects/formosa-4.html"/></url>
+  <url><loc>https://gridwavepower.com/projects/greater-changhua-2b-4.html</loc><xhtml:link rel="alternate" hreflang="en" href="https://gridwavepower.com/projects/greater-changhua-2b-4.html"/><xhtml:link rel="alternate" hreflang="zh-TW" href="https://gridwavepower.com/zh-TW/projects/greater-changhua-2b-4.html"/></url>
+  <url><loc>https://gridwavepower.com/zh-TW/projects/greater-changhua-2b-4.html</loc><xhtml:link rel="alternate" hreflang="en" href="https://gridwavepower.com/projects/greater-changhua-2b-4.html"/><xhtml:link rel="alternate" hreflang="zh-TW" href="https://gridwavepower.com/zh-TW/projects/greater-changhua-2b-4.html"/></url>
+  <url><loc>https://gridwavepower.com/projects/greater-changhua-1-2a.html</loc><xhtml:link rel="alternate" hreflang="en" href="https://gridwavepower.com/projects/greater-changhua-1-2a.html"/><xhtml:link rel="alternate" hreflang="zh-TW" href="https://gridwavepower.com/zh-TW/projects/greater-changhua-1-2a.html"/></url>
+  <url><loc>https://gridwavepower.com/zh-TW/projects/greater-changhua-1-2a.html</loc><xhtml:link rel="alternate" hreflang="en" href="https://gridwavepower.com/projects/greater-changhua-1-2a.html"/><xhtml:link rel="alternate" hreflang="zh-TW" href="https://gridwavepower.com/zh-TW/projects/greater-changhua-1-2a.html"/></url>
+  <url><loc>https://gridwavepower.com/projects/mailiao.html</loc><xhtml:link rel="alternate" hreflang="en" href="https://gridwavepower.com/projects/mailiao.html"/><xhtml:link rel="alternate" hreflang="zh-TW" href="https://gridwavepower.com/zh-TW/projects/mailiao.html"/></url>
+  <url><loc>https://gridwavepower.com/zh-TW/projects/mailiao.html</loc><xhtml:link rel="alternate" hreflang="en" href="https://gridwavepower.com/projects/mailiao.html"/><xhtml:link rel="alternate" hreflang="zh-TW" href="https://gridwavepower.com/zh-TW/projects/mailiao.html"/></url>
 </urlset>

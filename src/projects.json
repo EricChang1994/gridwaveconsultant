@@ -2,11 +2,11 @@
   {
     "slug": "east-anglia-one-north",
     "name": "East Anglia ONE North",
-    "subtitle": "Offshore substation (OSS)",
+    "subtitle": "Offshore substation",
     "country": "United Kingdom",
     "location": "Southern North Sea, off Suffolk, United Kingdom",
-    "capacity": "Aug 2026 – Present",
-    "capacity_label": "Founder’s involvement",
+    "capacity": "800MW",
+    "capacity_label": "Wind farm capacity",
     "category": "offshore",
     "discipline": "HV & protection interfaces",
     "image": "offshore-substation-yard.webp",
@@ -15,7 +15,7 @@
     "voltage": "HV & protection",
     "intro": "Connecting HV and protection interfaces, wiring documentation and multidisciplinary layout coordination for an offshore substation.",
     "overview": "East Anglia ONE North is an offshore wind development in the southern North Sea off the Suffolk coast, developed by East Anglia ONE North Ltd within ScottishPower Renewables’ East Anglia portfolio. It forms part of the East Anglia Hub and received development consent in March 2022. The founder’s work focuses on the offshore substation’s HV, protection and selected mechanical-system electrical interfaces.",
-    "note": "The period shown is the founder’s involvement, beginning in August 2026, rather than the overall project schedule. Responsibilities below are based on the founder’s October 2026 update.",
+    "note": "800MW is the wind farm capacity shown for this project. The founder’s involvement began in August 2026; responsibilities below are based on the founder’s October 2026 update.",
     "facts": [
       [
         "Developer portfolio",
@@ -136,7 +136,7 @@
   {
     "slug": "coastal-virginia",
     "name": "Coastal Virginia",
-    "subtitle": "Offshore Wind",
+    "subtitle": "Offshore substation",
     "country": "United States",
     "location": "Offshore Virginia Beach, United States",
     "capacity": "2.6 GW",
@@ -204,7 +204,7 @@
   {
     "slug": "formosa-4",
     "name": "Formosa 4",
-    "subtitle": "Offshore wind",
+    "subtitle": "Offshore substation",
     "country": "Taiwan",
     "location": "Offshore Miaoli County, Taiwan",
     "capacity": "495 MW",
@@ -272,7 +272,7 @@
   {
     "slug": "greater-changhua-2b-4",
     "name": "Greater Changhua 2b & 4",
-    "subtitle": "Offshore substations",
+    "subtitle": "Offshore substation",
     "country": "Taiwan",
     "location": "Offshore Changhua County, Taiwan",
     "capacity": "920 MW",
@@ -340,7 +340,7 @@
   {
     "slug": "greater-changhua-1-2a",
     "name": "Greater Changhua 1 & 2a",
-    "subtitle": "Onshore grid connection",
+    "subtitle": "Onshore substation",
     "country": "Taiwan",
     "location": "Changhua County, Taiwan",
     "capacity": "900 MW",
@@ -403,7 +403,7 @@
   {
     "slug": "mailiao",
     "name": "Mailiao Power Plant",
-    "subtitle": "High-voltage operations",
+    "subtitle": "Power plant operation",
     "country": "Taiwan",
     "location": "Mailiao, Yunlin County, Taiwan",
     "capacity": "1.8 GW",
